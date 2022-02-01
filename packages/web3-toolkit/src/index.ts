@@ -1,0 +1,1 @@
+export const logMyShit: () => void = () => console.log('hello world');
