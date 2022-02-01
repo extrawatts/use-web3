@@ -1,0 +1,21 @@
+0 silly argv {
+0 silly argv   _: [ 'clean' ],
+0 silly argv   yes: true,
+0 silly argv   y: true,
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath C:\Users\elvaleryn\use-web3
+3 info versioning independent
+4 info clean removing C:\Users\elvaleryn\use-web3\packages\example\node_modules
+5 silly rimrafDir C:\Users\elvaleryn\use-web3\packages\example\node_modules
+6 info clean removing C:\Users\elvaleryn\use-web3\packages\types\node_modules
+7 silly rimrafDir C:\Users\elvaleryn\use-web3\packages\types\node_modules
+8 info clean removing C:\Users\elvaleryn\use-web3\packages\web3-toolkit\node_modules
+9 silly rimrafDir C:\Users\elvaleryn\use-web3\packages\web3-toolkit\node_modules
+10 verbose rimrafDir removed C:\Users\elvaleryn\use-web3\packages\web3-toolkit\node_modules
+11 error Error: Command failed with exit code 1: C:\Program Files\nodejs\node.exe C:\Users\elvaleryn\use-web3\node_modules\rimraf\bin.js --no-glob C:\Users\elvaleryn\use-web3\packages\example\node_modules\
+11 error     at makeError (C:\Users\elvaleryn\use-web3\node_modules\execa\lib\error.js:60:11)
+11 error     at handlePromise (C:\Users\elvaleryn\use-web3\node_modules\execa\index.js:118:26)
+11 error     at processTicksAndRejections (internal/process/task_queues.js:95:5)
