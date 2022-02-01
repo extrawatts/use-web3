@@ -1,11 +1,15 @@
+import { useMainWeb3Context } from '@tokensuite/web3-toolkit';
 import React from 'react';
-import { logMyShit } from '@tokensuite/web3-toolkit';
+const Home: React.FC = () => {
+  const ctx = useMainWeb3Context();
+  console.log(ctx.config);
 
-const Home: React.FC = () => (
-  <div>
-    hello
-    <button onClick={logMyShit}>click to log</button>
-  </div>
-);
+  return (
+    <div>
+      hello
+      <button>click to log</button>
+    </div>
+  );
+};
 
 export default Home;
