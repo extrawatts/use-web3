@@ -1,1 +1,3 @@
-export const logMyShit: () => void = () => console.log('hello world');
+import { NetworkTypes } from '@tokensuite/types';
+
+export const logMyShit: () => NetworkTypes = () => 'rinkeby';

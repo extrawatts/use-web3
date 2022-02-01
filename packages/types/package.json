@@ -1,9 +1,9 @@
 {
-  "name": "@tokensuite/web3-toolkit",
+  "name": "@tokensuite/types",
   "keywords": [
-    "web3-react",
-    "web3-toolkit",
-    "dapps"
+    "tokensuite-types",
+    "web3-toolkit-types",
+    "dapps-types"
   ],
   "author": "tokensuite",
   "license": "MIT",
@@ -27,13 +27,5 @@
     "prebuild": "rm -rf dist",
     "build": "tsc && tsc --project tsconfig.cjs.json",
     "start": "tsc --watch"
-  },
-  "dependencies": {
-    "ethers": "^5.5.4",
-    "@tokensuite/types": "*"
-  },
-  "peerDependencies": {
-    "react": ">=16.8",
-    "ethers": ">=5.0.0"
   }
 }
