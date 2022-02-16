@@ -1,6 +1,8 @@
 import React from 'react';
 import type { AppProps } from 'next/app';
 import { MainWeb3ContextProvider } from '@tokensuite/web3-toolkit';
+import { Web3ReactProvider } from '@web3-react/core';
+import { ethers } from 'ethers';
 const networkProviders = {
   /**
    * Ethereum Http Provider
@@ -79,13 +81,16 @@ const networkProviders = {
     rpcUrl: '',
   },
 };
-
+// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+const getLibrary = (provider: any): ethers.providers.Web3Provider => new ethers.providers.Web3Provider(provider);
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
-      <MainWeb3ContextProvider networks={networkProviders}>
-        <Component {...pageProps} />
-      </MainWeb3ContextProvider>
+      <Web3ReactProvider getLibrary={getLibrary}>
+        <MainWeb3ContextProvider networks={networkProviders}>
+          <Component {...pageProps} />
+        </MainWeb3ContextProvider>
+      </Web3ReactProvider>
     </>
   );
 }
